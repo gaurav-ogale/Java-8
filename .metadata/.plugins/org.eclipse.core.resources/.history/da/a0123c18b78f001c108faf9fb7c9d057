@@ -1,0 +1,11 @@
+package com.ho;
+
+public class TestClass {
+
+	
+	
+	public static void main(String[] args) {
+		Printable print = ()->System.out.println("hello");
+		System.out.print(print);
+	}
+}

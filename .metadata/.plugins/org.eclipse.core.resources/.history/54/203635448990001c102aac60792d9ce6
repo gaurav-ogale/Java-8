@@ -1,0 +1,12 @@
+package com.ho.functions;
+
+import java.util.function.Predicate;
+
+public class ColorPredicate {
+	
+	public static void main(String[] args) {
+		
+		Predicate<String> colorPredicate = str -> str.startsWith("b");
+	}
+
+}

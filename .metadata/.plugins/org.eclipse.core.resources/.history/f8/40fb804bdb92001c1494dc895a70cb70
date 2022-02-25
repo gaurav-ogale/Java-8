@@ -1,0 +1,10 @@
+package com.ho.functions;
+
+import java.util.ArrayList;
+
+public class ConsumerTest {
+
+	public static void main(String[] args) {
+		ArrayList<Employee> empList = new ArrayList<>();
+	}
+}

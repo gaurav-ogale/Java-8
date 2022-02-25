@@ -1,0 +1,11 @@
+package com.ho.functions;
+
+import java.util.function.Function;
+
+public class EmployeeFunctionTest {
+	
+	public static void main(String[] args) {
+		Function<Employee, String> getNames = emp -> emp.getFirstname();
+	}
+
+}

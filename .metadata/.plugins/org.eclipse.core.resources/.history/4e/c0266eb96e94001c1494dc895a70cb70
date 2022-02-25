@@ -1,0 +1,28 @@
+package com.ho.functions;
+
+interface Printable {
+	void print();
+}
+
+interface Calculate {
+	int add(int a, int b);
+}
+
+public class MethodReferenceExample {
+
+	public static void print() {
+		System.out.println("Printed!!");
+	}
+
+	public static int add(int a, int b) {
+		return a + b;
+	}
+
+	public static void main(String[] args) {
+		
+		Printable print = MethodReferenceExample :: print;
+		print.print();
+
+	}
+
+}

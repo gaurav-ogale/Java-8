@@ -1,0 +1,10 @@
+package com.ho.functions;
+
+public class Employee {
+	
+	private String name;
+	private String role;
+	
+	
+
+}

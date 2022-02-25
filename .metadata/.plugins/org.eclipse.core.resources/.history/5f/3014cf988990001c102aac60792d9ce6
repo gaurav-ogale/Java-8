@@ -1,0 +1,24 @@
+package com.ho.functions;
+
+import java.util.Arrays;
+import java.util.function.Predicate;
+
+public class ColorPredicate {
+	
+	public static void process(String[] strArr,Predicate<String> strArr) {
+		Arrays.asList(strArr).forEach(str->{
+			if(strArr.test(str))
+				System.out.println(str);
+		});
+		
+	}
+	public static void main(String[] args) {
+		
+		Predicate<String> colorPredicate = str -> str.startsWith("b");
+		
+		String[] colors = {"black","blue","red","green","white"};
+		
+
+	}
+
+}

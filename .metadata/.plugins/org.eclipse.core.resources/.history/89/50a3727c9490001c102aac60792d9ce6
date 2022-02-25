@@ -1,0 +1,9 @@
+package com.ho.functions;
+
+import java.util.function.Predicate;
+
+public class EmployeePredicateTest {
+	public static void main(String[] args) {
+		Predicate<Employee> checkRole = emp ->(emp.getRole().equals("ADMIN"));
+	}
+}

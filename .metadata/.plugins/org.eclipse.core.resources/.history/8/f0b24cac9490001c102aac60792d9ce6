@@ -1,0 +1,17 @@
+package com.ho.functions;
+
+import java.util.ArrayList;
+import java.util.function.Predicate;
+
+public class EmployeePredicateTest {
+	public static void main(String[] args) {
+		Predicate<Employee> checkRole = emp ->(emp.getRole().equals("ADMIN"));
+		
+		Employee emp1 = new Employee("E1", "ADMIN");
+		Employee emp2 = new Employee("E2", "TESTER");
+		Employee emp3 = new Employee("E3", "DEVELOPER");
+		
+		ArrayList<Employee> empList = new ArrayList<Employee>();
+		
+	}
+}

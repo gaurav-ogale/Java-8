@@ -1,0 +1,11 @@
+package com.ho;
+
+public class Employee {
+
+	private String empName;
+	private int empId;
+	
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+}

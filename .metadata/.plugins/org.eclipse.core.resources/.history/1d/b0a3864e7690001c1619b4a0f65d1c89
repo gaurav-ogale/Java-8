@@ -1,0 +1,12 @@
+package com.ho;
+
+
+interface a1{
+	default void print() {
+		System.out.println("From a1");
+	}
+}
+
+public class DefaultMethods {
+
+}

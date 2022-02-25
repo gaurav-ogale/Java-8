@@ -1,0 +1,15 @@
+package com.ho;
+
+public class TestClass {
+
+	
+	
+	public static void main(String[] args) {
+		Printable print = ()->System.out.println("hello");
+		print.print();
+		
+		Sum sum = (x,y)->x+y;
+		System.out.println(sum.sum(10, 30));
+	
+	}
+}

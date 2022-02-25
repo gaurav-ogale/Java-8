@@ -1,0 +1,28 @@
+package com.ho.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamsAssignments {
+
+	public static void main(String[] args) {
+		List<EmployeeModel> empList = new ArrayList<EmployeeModel>();
+		empList.add(new EmployeeModel("Test", 11, "Ron", "Clark"));
+		empList.add(new EmployeeModel("Test", 12, "Ronny", "Clark"));
+		empList.add(new EmployeeModel("Test", 13, "Johnny", "Smith"));
+		empList.add(new EmployeeModel("Test", 14, "David", "Clark"));
+
+		//Given a list of employees,Convert firstName and LastName to uppercase and Join them with coma
+		List<String> empFullNames = empList.stream().map(emp -> emp.getFirstName() + "," + emp.getLastName())
+				.collect(Collectors.toList());
+		empFullNames.forEach(str -> System.out.println(str));
+		
+        //Given a String, find the first repeated character in it using Stream functions
+		empList.stream().map(emp->{
+			Character[] str = emp.getFirstName().toCharArray();
+ 		})
+		
+	}
+
+}

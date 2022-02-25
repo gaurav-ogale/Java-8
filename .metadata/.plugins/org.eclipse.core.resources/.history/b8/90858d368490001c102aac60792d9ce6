@@ -1,0 +1,19 @@
+package com.ho.functions;
+
+import java.util.function.Predicate;
+
+public class PredicateFI {
+	
+	public static void main(String[] args) {
+		
+		Predicate<Integer> maxInt = num ->num>10;
+		
+		System.out.println(maxInt.test(12));
+		
+		Integer[] a = {10,12,13,3,45,5,78};
+		
+		
+		
+	}
+
+}

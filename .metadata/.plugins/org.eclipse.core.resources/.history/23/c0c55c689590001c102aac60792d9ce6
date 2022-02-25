@@ -1,0 +1,9 @@
+package com.ho.functions;
+
+public class EmployeeFunctionTest {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

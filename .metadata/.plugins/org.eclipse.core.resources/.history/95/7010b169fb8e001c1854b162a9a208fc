@@ -1,0 +1,10 @@
+package com.ct;
+
+import java.util.HashMap;
+
+public class EmployeeTest {
+	public static void main(String[] args) {
+		HashMap<Integer, Employee> emloyeeMap = new HashMap<>();
+	}
+
+}

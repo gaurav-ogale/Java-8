@@ -1,0 +1,13 @@
+package com.ho.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StreamsAssignments {
+	
+	public static void main(String[] args) {
+		List<EmployeeModel> empList = new ArrayList<EmployeeModel>();
+		empList.add(new EmployeeModel("Test", 11, "Ron", "Clark"));
+	}
+
+}

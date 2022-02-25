@@ -1,0 +1,29 @@
+package com.ho.functions;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.function.Predicate;
+
+public class PredicateFI {
+	
+	public static void main(String[] args) {
+		
+		Predicate<Integer> maxInt = num ->num%2==0;
+		
+		System.out.println(maxInt.test(12));
+		
+		Integer[] a = {10,12,13,3,45,5,78};
+		ArrayList<Integer> oddList = null;
+		ArrayList<Integer> evenList = null;
+		
+		Arrays.asList(a).forEach(num->{
+			if(maxInt.test(num))
+				evenList.add(num);
+			else
+				oddList.add(num);				
+		});
+		
+	}
+
+}

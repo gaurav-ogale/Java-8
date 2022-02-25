@@ -1,0 +1,7 @@
+package com.ho.functions;
+
+public class EmployeePredicateTest {
+	public static void main(String[] args) {
+
+	}
+}

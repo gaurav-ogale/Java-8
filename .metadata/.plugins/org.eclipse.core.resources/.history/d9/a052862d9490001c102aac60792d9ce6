@@ -1,0 +1,14 @@
+package com.ho.functions;
+
+public class Employee {
+
+	private String name;
+	private String role;
+
+	public Employee(String name, String role) {
+		super();
+		this.name = name;
+		this.role = role;
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.ho.functions;
+
+public class CustomerLambdaTest {
+	
+	private String name;
+	
+
+}

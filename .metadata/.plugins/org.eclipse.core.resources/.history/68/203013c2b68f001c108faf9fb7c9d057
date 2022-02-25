@@ -1,0 +1,5 @@
+package com.ho;
+
+public interface Printable {
+
+}

@@ -1,0 +1,43 @@
+package com.ho.functions;
+
+interface Printable {
+	void print();
+}
+
+interface Calculate {
+	int add(int a, int b);
+}
+
+interface multiple{
+	int multi(int a, int b);
+}
+
+public class MethodReferenceExample {
+
+	public static void print() {
+		System.out.println("Printed!!");
+	}
+
+	public static int add(int a, int b) {
+		return a + b;
+	}
+	
+	public int multi(int a, int b) {
+		return a*b;
+	}
+
+	public static void main(String[] args) {
+		
+		Printable print = MethodReferenceExample :: print;
+		print.print();
+		
+		Calculate cal = MethodReferenceExample :: add;
+		System.out.println(cal.add(10, 20));
+		
+		multiple m = new MethodReferenceExample() :: multi;
+		System.out.println(m.multi(10, 9));
+		
+
+	}
+
+}

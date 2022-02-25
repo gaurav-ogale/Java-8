@@ -1,0 +1,14 @@
+package com.ho.functions;
+
+import java.util.function.Supplier;
+
+public class PasswordSupplierExample {
+	
+	public static void main(String[] args) {
+		Supplier<String> generatePassword = ()->{
+			String password = "";
+			return password;
+		};
+	}
+
+}

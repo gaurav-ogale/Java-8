@@ -1,0 +1,8 @@
+package com.ho.functions;
+
+public class ConsumerTest {
+
+	public static void main(String[] args) {
+		
+	}
+}

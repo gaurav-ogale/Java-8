@@ -1,0 +1,21 @@
+package com.ho.streams;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamsAssignments {
+
+	public static void main(String[] args) {
+		List<EmployeeModel> empList = new ArrayList<EmployeeModel>();
+		empList.add(new EmployeeModel("Test", 11, "Ron", "Clark"));
+		empList.add(new EmployeeModel("Test", 12, "Rony", "Clark"));
+		empList.add(new EmployeeModel("Test", 13, "John", "Smith"));
+		empList.add(new EmployeeModel("Test", 14, "David", "Clark"));
+
+		List<String> empFullNames = empList.stream().map(emp -> emp.getFirstName() + " " + emp.getLastName())
+				.collect(Collectors.toList());
+		empFullNames.forEach(str -> System.out.println(str));
+	}
+
+}

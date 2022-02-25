@@ -1,0 +1,10 @@
+package com.ho;
+
+public class LamdaRunnableEx {
+
+	public static void main(String[] args) {
+		Thread t = new Thread(()-> {
+			
+		});
+	}
+}

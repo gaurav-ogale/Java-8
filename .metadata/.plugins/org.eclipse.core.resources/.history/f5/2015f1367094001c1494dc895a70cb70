@@ -1,0 +1,53 @@
+package com.ho.functions;
+
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
+interface Printable {
+	void print();
+}
+
+interface Calculate {
+	int add(int a, int b);
+}
+
+interface multiple{
+	int multi(int a, int b);
+}
+
+public class MethodReferenceExample {
+	public MethodReferenceExample() {
+		System.out.println("Constructor");
+	}
+
+	///Static
+	public static void print() {
+		System.out.println("Printed!!");
+	}
+
+	public static int add(int a, int b) {
+		return a + b;
+	}
+	//Instance
+	public int multi(int a, int b) {
+		return a*b;
+	}
+
+	public static void main(String[] args) {
+		
+		Printable print = MethodReferenceExample :: print;
+		print.print();
+		//Static
+		Calculate cal = MethodReferenceExample :: add;
+		System.out.println(cal.add(10, 20));
+		//Instance MEthod ref
+		multiple m = new MethodReferenceExample() :: multi;
+		System.out.println(m.multi(10, 9));
+		
+		Supplier<MethodReferenceExample> s1 = MethodReferenceExample :: new;
+		s1.get();
+		
+
+	}
+
+}

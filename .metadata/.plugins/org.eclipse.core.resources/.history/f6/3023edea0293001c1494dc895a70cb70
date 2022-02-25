@@ -1,0 +1,17 @@
+package com.ho.functions;
+
+import java.util.function.Supplier;
+
+public class PasswordSupplierExample {
+
+	public static void main(String[] args) {
+		Supplier<String> generatePassword = () -> {
+			String password = "";
+			String symbol = "@#$";
+			String cap_letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			String numbers = "0123456789";
+			return password;
+		};
+	}
+
+}

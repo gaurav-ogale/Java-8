@@ -1,0 +1,14 @@
+package com.ho.streams;
+
+public class StreamEmployeeTest {
+	
+	public static void main(String[] args) {
+		EmployeeModel e1 = new EmployeeModel("Sun", 25);
+		EmployeeModel e2 = new EmployeeModel("Ron", 15);
+		EmployeeModel e3 = new EmployeeModel("Tim", 20);
+		EmployeeModel e4 = new EmployeeModel("David", 40);
+		EmployeeModel e5 = new EmployeeModel("Sun", 67);
+		EmployeeModel e6 = new EmployeeModel("Roy", 43);
+	}
+
+}
